@@ -44,7 +44,6 @@ function findIndexOfDot(higherUp, startInd, text) {
 }
 
 function buildSentence(lower, higher, text) {
-    //TODO write this function
     if(lower != 0) {
         lower = lower + 2;
     }
@@ -59,10 +58,11 @@ $('#readField').on('click', function() {
     var lower = findIndexOfDot(false, clickedIndex, text);
     var higher = findIndexOfDot(true, clickedIndex, text);
     var newSentence = buildSentence(lower, higher, text);
-
-    console.log(text.substring(lower, clickedIndex));
-    console.log(text.substring(clickedIndex, higher));
     var summaryField = $('#summaryField');
-    summaryField.val(summaryField.val() + newSentence);
-
+    
+    if(summaryField.val().trim() == "") {
+        summaryField.val(newSentence);
+    } else {
+        summaryField.val(summaryField.val() + newSentence);
+    }
 });

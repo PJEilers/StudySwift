@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <title>Welcome to StudySwift</title>
 </head>
-<body>
-    <h1> Welcome to StudySwift </h1>
-    <div id="welcomeMessageDiv">Hi there! We are StudySwift and we are here
-        to help you study even faster than before. We are doing this by
-        enabling you to quickly summarize whatever you are reading.
-        The idea is simple, you copy a piece of text to the field on the left
-        and start reading. As soon as you pass a sentence you want to save just click on it.
-        We'll save this sentence in the box at the right, which will be your summary. </div>
 
-    <textarea style="height:400px; width:400px;" id="readField"> </textarea>
-    <textarea style="height:400px; width:400px;" id="summaryField"> </textarea>
+<body>
+    <div class="container">
+        <div class="panel panel-primary col-md-offset-1 col-md-10">
+            <div class="panel-heading" style="background-color:#6e706d">
+                <h1 class="page-header">Welcome to StudySwift</h1>
+            </div>
+            <div id="welcomeMessageDiv" class="panel panel-body">
+                Hi there! <br>We are StudySwift and we are here
+                to help you study even faster than before. We are doing this by
+                enabling you to quickly summarize whatever you are reading.
+                The idea is simple, you copy a piece of text to the field on the left
+                and start reading. As soon as you pass a sentence you want to save just click on it.
+                We'll save this sentence in the box at the right, which will be your summary. 
+            </div>
+        </div>
+
+        <div class="panel panel-default col-md-offset-1 col-md-10">
+            <textarea id="readField"> </textarea>
+            <textarea id="summaryField"> </textarea>
+        </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./index.js"></script>
