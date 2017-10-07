@@ -7,7 +7,6 @@ studyswift:
 	cp summary.html ./pdf.js/web/
 	cp summary.css ./pdf.js/web/
 	cp viewer.html ./pdf.js/web/
-	gulp server
 
 noClone:
 	sudo npm install -g gulp-cli
