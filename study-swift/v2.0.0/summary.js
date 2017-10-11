@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {	
 	setSummary();
 	setGoBackButton();
+	setFeedbackButton();
 });
 
 document.addEventListener("unload", saveSummary);
@@ -11,6 +12,12 @@ function setGoBackButton() {
 		saveSummary();
 		javascript:history.go(-1);
 	}
+}
+
+function setFeedbackButton() {
+	var button = document.getElementById("feedback");
+	button.onclick = function() {
+	window.location = "http://docs.google.com/forms/d/1F8rH-Asad3nH6BwZnDI356d44FjzTxtnnQwnfq3HNIQ"}
 }
 
 function saveSummary() {

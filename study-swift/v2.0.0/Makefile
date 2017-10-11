@@ -16,3 +16,11 @@ noClone:
 	cp summary.html ./pdf.js/web/
 	cp summary.css ./pdf.js/web/
 	cp viewer.html ./pdf.js/web/
+
+
+update:
+	cp studySwift.js ./pdf.js/web/
+	cp summary.js ./pdf.js/web/
+	cp summary.html ./pdf.js/web/
+	cp summary.css ./pdf.js/web/
+	cp viewer.html ./pdf.js/web/
