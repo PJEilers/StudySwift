@@ -1,0 +1,36 @@
+textarea {
+	height: 70%;
+	float: left; 
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 3%;
+}
+
+body {
+	height: 100%;
+}
+
+#goBack {
+	font-size: 19px;
+	height: 40px;
+	width: 200px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#bWrapper {
+	height: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+#title {
+	font-size: 45px;
+	color: white;
+	height: 35px;
+	/*min-width: 315px;*/
+	width: 100%;
+	text-align: center;
+	margin-top:30px; 
+}
