@@ -40,6 +40,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 <!--#endif-->
 
     <link rel="stylesheet" href="viewer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" crossorigin="anonymous">
 <!--#if !PRODUCTION-->
     <link rel="resource" type="application/l10n" href="locale/locale.properties">
 <!--#endif-->
@@ -62,8 +63,12 @@ See https://github.com/adobe-type-tools/cmap-resources
 	<script src="./studySwift.js"></script>
 	<script src="./toolbarInjection.js"></script>
   </head>
+  
+  
 
   <body tabindex="1" class="loadingInProgress">
+        <div class ="row">
+      <div class ="col-md-9">
     <div id="outerContainer">
 
       <div id="sidebarContainer">
@@ -75,7 +80,7 @@ See https://github.com/adobe-type-tools/cmap-resources
             <button id="viewOutline" class="toolbarButton" title="Show Document Outline (double-click to expand/collapse all items)" tabindex="3" data-l10n-id="document_outline">
                <span data-l10n-id="document_outline_label">Document Outline</span>
             </button>
-            <button id="viewAttachments" class="toolbarButton" title="Show Attachments" tabindex="4" data-l10n-id="attachments">
+            <button id="viewSummary" class="toolbarButton" title="Show Summary" tabindex="4" data-l10n-id="attachments">
                <span data-l10n-id="attachments_label">Attachments</span>
             </button>
           </div>
@@ -387,5 +392,19 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     </div> <!-- outerContainer -->
     <div id="printContainer"></div>
+      </div>
+      <div class ="col-md-3"></div>
+    <link rel="stylesheet" href="summary.css">
+<!--#if !PRODUCTION-->
+    <link rel="resource" type="application/l10n" href="locale/locale.properties">
+    <script type="text/javascript" src="./summary.js"></script>
+
+    <h2 id="title">Thank you for using StudySwift!</h2>
+    <h2 id="title">Here's your summary</h2>
+    <textarea id="summaryField"> </textarea>
+    <div id="bWrapper">
+      <button id="goBack" class="toolbarButton">[Go back to the PDF]</button>
+    </div>
+        </div>
   </body>
 </html>
