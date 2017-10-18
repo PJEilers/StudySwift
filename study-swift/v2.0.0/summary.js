@@ -25,6 +25,13 @@ function saveSummary() {
 	localStorage.studyswift = block.value;
 }
 
+
+function setFeedbackButton() {
+	var button = document.getElementById("feedback");
+	button.onclick = function() {
+	window.location = "http://docs.google.com/forms/d/1F8rH-Asad3nH6BwZnDI356d44FjzTxtnnQwnfq3HNIQ"}
+}
+
 function setSummary() {
 	var block = document.getElementById("summaryField");
 	block.value = localStorage.studyswift;
