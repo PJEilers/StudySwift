@@ -1,3 +1,0 @@
-[submodule "study-swift/v3.0.0/pdf.js"]
-	path = study-swift/v3.0.0/pdf.js
-	url = git://github.com/mozilla/pdf.js.git
